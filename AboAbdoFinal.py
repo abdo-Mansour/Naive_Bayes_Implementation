@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 
 class NaiveBayes:
     def __init__(self):
@@ -80,7 +79,6 @@ class NaiveBayes:
         return: pandas Series
         '''
         y_pred = []
-        feature_values = np.unique(X.values)
         X_v = X.values
         for x in X_v:
             prob = {}
